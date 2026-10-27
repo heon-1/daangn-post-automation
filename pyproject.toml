@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cafe-publisher"
+version = "0.1.0"
+description = "A configurable Playwright publisher with manual login, resumable queues and duplicate detection"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["playwright==1.63.0"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: POSIX",
+  "Topic :: Internet :: WWW/HTTP :: Browsers",
+]
+
+[project.scripts]
+cafe-publisher = "uploader.__main__:cli"
+cafe-publisher-verify = "uploader.verification:main"
+
+[project.urls]
+Repository = "https://github.com/heon-1/daangn-post-automation"
+Issues = "https://github.com/heon-1/daangn-post-automation/issues"
+
+[tool.setuptools]
+packages = ["uploader"]
+include-package-data = false

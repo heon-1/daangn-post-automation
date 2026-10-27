@@ -1,0 +1,25 @@
+# Public files are explicitly allowed. Local accounts, content and logs stay private.
+*
+!.gitignore
+!.gitattributes
+!README.md
+!LICENSE
+!SECURITY.md
+!CONTRIBUTING.md
+!pyproject.toml
+!MANIFEST.in
+!requirements.txt
+!config.example.json
+!uploader/
+!uploader/*.py
+!tests/
+!tests/test_*.py
+tests/test_reserve.py
+!examples/
+!examples/posts.json
+!examples/config.generic.json
+!scripts/
+!scripts/release.py
+!.github/
+!.github/workflows/
+!.github/workflows/ci.yml

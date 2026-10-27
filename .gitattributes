@@ -1,0 +1,7 @@
+* text=auto eol=lf
+/.auth export-ignore
+/.state export-ignore
+/config.json export-ignore
+/content export-ignore
+/assets export-ignore
+/dist export-ignore
